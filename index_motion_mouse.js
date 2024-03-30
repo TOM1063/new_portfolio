@@ -23,7 +23,7 @@ function animate() {
   var make_acction = moveElemAlongPath(make, make_motion, frame);
   if (make_acction == 1) {
     make.innerHTML = "⚒️ clang!";
-    make.style.style.setProperty("background-color", "white");
+    make.style.setProperty("background-color", "white");
   } else {
     make.innerHTML = "⚒️";
     make.style.setProperty("background-color", "rgba(0,0,0, 0)");
