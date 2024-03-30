@@ -1,39 +1,43 @@
 import TWEEN from "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@18.5.0/dist/tween.esm.js";
 
-var sc_width = screen.width;
-var sc_height = screen.height;
+var sc_width = window.innerWidth;
+var sc_height = window.innerHeight;
 
 var frame = 0;
 function animate() {
   requestAnimationFrame(animate);
   // [...]
 
-  sc_width = screen.width;
-  sc_height = screen.height;
+  sc_width = window.innerWidth;
+  sc_height = window.innerHeight;
   // [...]
-  var camera_acction = moveElemAlongPath(camera, camera_motion, frame);
+  var camera_acction = moveElemAlongPath(camera_img, camera_motion, frame);
   if (camera_acction == 1) {
-    camera.innerHTML = "📸 click!";
+    camera_img.innerHTML = "📸 click!";
   } else {
-    camera.innerHTML = "📷";
+    camera_img.innerHTML = "📷";
   }
 
   var make_acction = moveElemAlongPath(make, make_motion, frame);
-  if (camera_acction == 1) {
+  if (make_acction == 1) {
     make.innerHTML = "⚒️ clang!";
   } else {
     make.innerHTML = "⚒️";
   }
 
-  random.style.setProperty("transform", "rotate(" + frame / 10 + ")");
+  random.style.setProperty("transform", "rotate(" + frame + "deg)");
 
   frame += 1;
 }
 requestAnimationFrame(animate);
 
 var camera = document.getElementById("camera");
+var camera_img = document.getElementById("camera-img");
+
 var pc = document.getElementById("pc");
+
 var make = document.getElementById("make");
+
 var random = document.getElementById("random");
 
 var camera_motion = getArrayFromCSV("data/camera.csv");

@@ -1,7 +1,7 @@
 html {
     height: 100vh;
     z-index: -100;
-    background-color: blue;
+    background-color: rgb(0,0,255)
 }
 
 .name_container {
@@ -15,14 +15,21 @@ html {
     letter-spacing:0.7rem;
     margin-top: 30vh;
     margin-left: 100px;
+    /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
 }
 .icon {
     pointer-events: fill;
     transform: translate(0,0);
-    position: absolute;
     text-decoration: none;
     letter-spacing: 0.2rem;
     color:rgb(255, 255, 255);
     font-size:2rem;
     z-index: 100;
+    position: absolute;
+    display:block;
+    /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
+}
+
+.icon-img {
+    position: absolute;
 }
