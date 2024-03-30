@@ -1,0 +1,28 @@
+html {
+    height: 100vh;
+    z-index: -100;
+    background-color: blue;
+}
+
+.name_container {
+    color:rgb(255, 255, 255);
+    font-size:2rem;
+    position:fixed;
+}
+.name {
+    width:100vw;
+    /* text-align: center; */
+    letter-spacing:0.7rem;
+    margin-top: 30vh;
+    margin-left: 100px;
+}
+.icon {
+    pointer-events: fill;
+    transform: translate(0,0);
+    position: absolute;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    color:rgb(255, 255, 255);
+    font-size:2rem;
+    z-index: 100;
+}
