@@ -3,6 +3,7 @@ html {
     z-index: -100;
     background-color: rgb(0,0,255);
     font-family:'Courier New', Courier, monospace;
+    color:rgb(255, 255, 255);
 }
 
 .name_container {
@@ -18,12 +19,16 @@ html {
     width: 100vw;
     font-family:'Courier New', Courier, monospace;
     /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
+    text-decoration:none;
+    color:white;
 }
 
 #t {
+    width:auto;
     margin-left: 100px;
     margin-top: 100px;
     font-size: 10rem;
+    transform: rotate(90 deg);
 }
 #o {
     margin-top: 50vh;
@@ -53,4 +58,39 @@ html {
 
 .icon-img {
     position: absolute;
+}
+
+
+
+
+
+
+/*-------------------------- bio-------------------------- */
+
+.self_img {
+    width:200px;
+    height:200px;
+}
+
+.self_img img {
+    width:200px;
+    height:200px;
+}
+
+
+
+.title {
+    letter-spacing: 1rem;
+}
+
+.contact a {
+    color:white;
+    border-bottom:0cap;
+    text-decoration: none;
+}
+
+
+.home {
+    font-size:2rem;
+    text-decoration: none;
 }
