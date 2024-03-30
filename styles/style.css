@@ -1,28 +1,49 @@
 html {
     height: 100vh;
     z-index: -100;
-    background-color: rgb(0,0,255)
+    background-color: rgb(0,0,255);
+    font-family:'Courier New', Courier, monospace;
 }
 
 .name_container {
     color:rgb(255, 255, 255);
     font-size:2rem;
     position:fixed;
+    height:100vh;
 }
 .name {
-    width:100vw;
     /* text-align: center; */
     letter-spacing:0.7rem;
-    margin-top: 30vh;
-    margin-left: 100px;
+    position:absolute;
+    width: 100vw;
+    font-family:'Courier New', Courier, monospace;
     /* text-shadow: 0px 0px 20px rgb(0, 0, 0); */
+}
+
+#t {
+    margin-left: 100px;
+    margin-top: 100px;
+    font-size: 10rem;
+}
+#o {
+    margin-top: 50vh;
+    text-align: center;
+    font-size: 3rem;
+}
+#m {
+    margin-right:10px;
+    bottom:50vh;
+    text-align: right;
+    transform: translate(-100px,0px);
+    font-size: 5rem;
+
 }
 .icon {
     pointer-events: fill;
     transform: translate(0,0);
     text-decoration: none;
     letter-spacing: 0.2rem;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     font-size:2rem;
     z-index: 100;
     position: absolute;

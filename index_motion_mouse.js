@@ -14,18 +14,27 @@ function animate() {
   var camera_acction = moveElemAlongPath(camera_img, camera_motion, frame);
   if (camera_acction == 1) {
     camera_img.innerHTML = "📸 click!";
+    camera_img.style.setProperty("background-color", "white");
   } else {
     camera_img.innerHTML = "📷";
+    camera_img.style.setProperty("background-color", "rgba(0,0,0, 0)");
   }
 
   var make_acction = moveElemAlongPath(make, make_motion, frame);
   if (make_acction == 1) {
     make.innerHTML = "⚒️ clang!";
+    make.style.style.setProperty("background-color", "white");
   } else {
     make.innerHTML = "⚒️";
+    make.style.setProperty("background-color", "rgba(0,0,0, 0)");
   }
 
-  random.style.setProperty("transform", "rotate(" + frame + "deg)");
+  name_t.style.setProperty(
+    "transform",
+    "scale(1," + 10 * Math.sin((frame / 100) % 360) + 1 + ")"
+  );
+
+  random.style.setProperty("transform", "rotate(" + (frame % 360) + "deg)");
 
   frame += 1;
 }
@@ -39,6 +48,8 @@ var pc = document.getElementById("pc");
 var make = document.getElementById("make");
 
 var random = document.getElementById("random");
+
+var name_t = document.getElementById("t");
 
 var camera_motion = getArrayFromCSV("data/camera.csv");
 var make_motion = getArrayFromCSV("data/make.csv");
