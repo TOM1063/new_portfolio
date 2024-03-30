@@ -6,6 +6,13 @@ html {
     color:rgb(255, 255, 255);
 }
 
+body {
+    width:100vw;
+    /* height:100vh; */
+    position:absolute;
+    margin:0;
+}
+
 .name_container {
     color:rgb(255, 255, 255);
     font-size:2rem;
@@ -25,7 +32,7 @@ html {
 
 #t {
     width:auto;
-    margin-left: 100px;
+    margin-left: 20vw;
     margin-top: 100px;
     font-size: 10rem;
     transform: rotate(90 deg);
@@ -36,7 +43,7 @@ html {
     font-size: 3rem;
 }
 #m {
-    margin-right:10px;
+    margin-right:30vw;
     bottom:50vh;
     text-align: right;
     transform: translate(-100px,0px);
@@ -60,6 +67,19 @@ html {
     position: absolute;
 }
 
+
+#flower {
+    font-size: 3rem;
+    bottom: 0;
+    margin-left: 40vw;
+}
+
+
+
+.page_title {
+    width:100%;
+    color:black;
+}
 
 
 
@@ -93,4 +113,37 @@ html {
 .home {
     font-size:2rem;
     text-decoration: none;
+    text-align: center;
+}
+
+
+/*-------------------------- photos-------------------------- */
+.bg_white {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.photos {
+    display: box;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.photo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    width:calc(30vw + 100px);
+    height:calc(30vw + 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    box-shadow: 10px 10px 30px rgb(220, 220, 220);
+}
+
+.photo img {
+    width:30vw;
+    height:30vw;
+    position:absolute;
 }
