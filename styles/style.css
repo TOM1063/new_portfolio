@@ -222,3 +222,24 @@ body {
     color:white;
     letter-spacing: 0.2rem;
 }
+
+@media screen and (max-width: 768px) {
+    .works {
+        margin-left: 10px;
+    }
+    /* .work img {
+        width:150px;
+    } */
+    .work {
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .work-title {
+        font-size:1.5rem;
+    }
+    .work-date {
+        font-size:0.7rem;
+    }
+    
+}
