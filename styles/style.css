@@ -244,7 +244,130 @@ body {
     
 }
 
+.work-name {
+    margin:0 auto;
+    margin-top:150px;
+    margin-bottom:10px;
+    width:60vw;
+}
+.work-text {
+    margin:0 auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    width:60vw;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}
 
+.ja {
+    font-family: serif;
+    letter-spacing: 0.2rem;
+}
+
+.movie {
+    width:55vw;
+    display: block;
+    height:40vh;
+    margin:0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+.work-container {
+    color:rgb(98, 98, 98);
+}
+
+
+.work-picture {
+    width:50vw;
+    height:auto;
+    margin:0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+    /* align-items: center;
+    justify-content: center;
+    position:relative; */
+    /* box-shadow: 10px 10px 30px rgb(220, 220, 220); */
+}
+.work-picture-large {
+    width:70vw;
+    height:auto;
+    margin:0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+    /* align-items: center;
+    justify-content: center;
+    position:relative; */
+    /* box-shadow: 10px 10px 30px rgb(220, 220, 220); */
+}
+
+.work-picture-caption {
+    display: block;
+    color:rgb(0, 0, 0);
+    font-size: 0.5rem;
+    text-align: right;
+}
+
+.work-picture img {
+    width:50vw;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    /* height:30vw; */
+    /* position:absolute; */
+}
+
+.work-picture-large img {
+    width:70vw;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    /* height:30vw; */
+    /* position:absolute; */
+}
+
+
+@media screen and (max-width: 768px) {
+    .work-picture {
+        width:60vw;
+    }
+    .work-picture img {
+        width:60vw;
+    }
+    .work-picture-large {
+        width:90vw;
+    }
+    .work-picture-large img {
+        width:90vw;
+    }
+    
+
+    .work-name {
+        margin:0 auto;
+        margin-top:150px;
+        margin-bottom:10px;
+        width:80vw;
+        font-size: 1rem;
+    }
+    .work-text {
+        margin:0 auto;
+        margin-top:40px;
+        margin-bottom:40px;
+        width:80vw;
+        font-size: 0.6rem;
+        line-height: 0.9rem;
+        letter-spacing: 0.01rem;
+    }
+
+    .movie {
+        width:100vw;
+    }
+    
+}
 
 
 /*-------------------------- random-------------------------- */
