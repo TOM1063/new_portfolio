@@ -243,3 +243,24 @@ body {
     }
     
 }
+
+
+
+
+/*-------------------------- random-------------------------- */
+
+#saying {
+    width:100%;
+    text-align: center;
+    margin-top:45vh;
+}
+
+.fixed_page {
+    width:100vw;
+    height:100vh;
+}
+.footer {
+    width:100%;
+    position:absolute;
+    bottom:40vh;
+}
