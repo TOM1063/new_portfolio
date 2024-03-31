@@ -29,6 +29,8 @@ function animate() {
     make.style.setProperty("background-color", "rgba(0,0,0, 0)");
   }
 
+  typeElement(pc, pc_motion, frame, "🖥️");
+
   name_t.style.setProperty(
     "transform",
     "scale(1," + 10 * Math.sin((frame / 100) % 360) + 1 + ")"
@@ -53,7 +55,7 @@ var name_t = document.getElementById("t");
 
 var camera_motion = getArrayFromCSV("data/camera.csv");
 var make_motion = getArrayFromCSV("data/make.csv");
-// var pc_motion = getArrayFromCSV("data/camera.csv");
+var pc_motion = getArrayFromCSV("data/pc.csv");
 // var make_motion = getArrayFromCSV("data/camera.csv");
 // var random_motion = getArrayFromCSV("data/camera.csv");
 
@@ -68,11 +70,19 @@ function moveElemAlongPath(_elem, _array, _frame) {
   return acction;
 }
 
-function actionElement(_elem, _array, _frame, func) {
-  var acction = current_data[4];
-  if (acction == 1) {
-    func;
+function typeElement(_elem, _array, _frame, _initial) {
+  var repeated_frame = _frame % _array.length;
+  var current_data = _array[repeated_frame];
+  var text = current_data[2];
+  _elem.innerHTML = _initial + " " + text;
+
+  if (text == "") {
+    _elem.style.setProperty("background-color", "rgba(0,0,0,0)");
+  } else {
+    _elem.style.setProperty("background-color", "rgba(255,255,255)");
   }
+  var acction = current_data[4];
+  return acction;
 }
 
 function getArrayFromCSV(url) {

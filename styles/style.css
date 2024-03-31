@@ -67,11 +67,23 @@ body {
     position: absolute;
 }
 
+#pc {
+    transform:translate(10vw,calc(100vh - 200px));
+    width:140px;
+    /* margin-top:49vh; */
+    /* bottom:200px; */
+    /* margin-left: 10vw; */
+    position: absolute;
+}
 
 #flower {
     font-size: 3rem;
     bottom: 0;
     margin-left: 40vw;
+}
+
+#random {
+    position: absolute;
 }
 
 
