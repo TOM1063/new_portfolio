@@ -79,7 +79,7 @@ function typeElement(_elem, _array, _frame, _initial) {
   if (text == "") {
     _elem.style.setProperty("background-color", "rgba(0,0,0,0)");
   } else {
-    _elem.style.setProperty("background-color", "rgba(255,255,0)");
+    _elem.style.setProperty("background-color", "rgba(255,255,255)");
   }
   var acction = current_data[4];
   return acction;

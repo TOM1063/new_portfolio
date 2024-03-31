@@ -68,7 +68,7 @@ body {
 }
 
 #pc {
-    transform:translate(10vw,calc(100vh - 200px));
+    transform:translate(10vw,calc(100vh - 300px));
     width:140px;
     /* margin-top:49vh; */
     /* bottom:200px; */
