@@ -22,10 +22,10 @@ function animate() {
 
   var make_acction = moveElemAlongPath(make, make_motion, frame);
   if (make_acction == 1) {
-    make.innerHTML = "⚒️ clang!";
+    make.innerHTML = "🔨clang!";
     make.style.setProperty("background-color", "white");
   } else {
-    make.innerHTML = "⚒️";
+    make.innerHTML = "🔨";
     make.style.setProperty("background-color", "rgba(0,0,0, 0)");
   }
 
