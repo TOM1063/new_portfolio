@@ -30,6 +30,10 @@ body {
     color:white;
 }
 
+a {
+    text-decoration: none;
+}
+
 #t {
     width:auto;
     margin-left: 20vw;
@@ -273,10 +277,14 @@ body {
     margin-bottom: 50px;
 }
 
+#cl_voice-movie {
+    height:100vh;
+}
+
 
 
 .work-container {
-    color:rgb(98, 98, 98);
+    color:rgb(61, 61, 61);
 }
 
 
@@ -328,6 +336,12 @@ body {
     align-items: center;
     /* height:30vw; */
     /* position:absolute; */
+}
+
+
+.qiita {
+    color:rgb(0, 146, 37);
+    font-srgb(13, 255, 0)1rem;
 }
 
 
