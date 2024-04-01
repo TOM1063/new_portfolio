@@ -1,4 +1,4 @@
-import TWEEN from "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@18.5.0/dist/tween.esm.js";
+// import TWEEN from "https://cdn.jsdelivr.net/npm/@tweenjs/tween.js@18.5.0/dist/tween.esm.js";
 
 var sc_width = window.innerWidth;
 var sc_height = window.innerHeight;
