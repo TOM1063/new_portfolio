@@ -6,11 +6,10 @@ var sc_height = window.innerHeight;
 var frame = 0;
 function animate() {
   requestAnimationFrame(animate);
-  // [...]
 
   sc_width = window.innerWidth;
   sc_height = window.innerHeight;
-  // [...]
+
   var camera_acction = moveElemAlongPath(camera_img, camera_motion, frame);
   if (camera_acction == 1) {
     camera_img.innerHTML = "📸 click!";
@@ -46,18 +45,13 @@ var camera = document.getElementById("camera");
 var camera_img = document.getElementById("camera-img");
 
 var pc = document.getElementById("pc");
-
 var make = document.getElementById("make");
-
 var random = document.getElementById("random");
-
 var name_t = document.getElementById("t");
 
 var camera_motion = getArrayFromCSV("data/camera.csv");
 var make_motion = getArrayFromCSV("data/make.csv");
 var pc_motion = getArrayFromCSV("data/pc.csv");
-// var make_motion = getArrayFromCSV("data/camera.csv");
-// var random_motion = getArrayFromCSV("data/camera.csv");
 
 function moveElemAlongPath(_elem, _array, _frame) {
   var repeated_frame = _frame % _array.length;
@@ -88,24 +82,19 @@ function typeElement(_elem, _array, _frame, _initial) {
 function getArrayFromCSV(url) {
   let csv = new XMLHttpRequest();
   let csvArray = [];
-  // CSVファイルへのパス
   csv.open("GET", url, false);
-  // csvファイル読み込み失敗時のエラー対応
   try {
     csv.send(null);
   } catch (err) {
     console.log(err);
   }
-  // 改行ごとに配列化
   let lines = csv.responseText.split(/\r\n|\n/);
-  // 1行ごとに処理
   for (let i = 0; i < lines.length; ++i) {
     let cells = lines[i].split(",");
     if (cells.length != 1) {
       csvArray.push(cells);
     }
   }
-  // コンソールに配列を出力
   console.log(csvArray);
 
   return csvArray;

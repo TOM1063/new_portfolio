@@ -90,6 +90,17 @@ a {
     position: absolute;
 }
 
+#index-comment {
+    margin-top:50vh;
+    margin-left:60vw;
+    background-color: black;
+    /* border-radius: 10px:; */
+    color:white;
+    padding-left: 2px;
+    width: 30vw;
+    
+}
+
 
 
 .page_title {
