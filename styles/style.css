@@ -290,8 +290,14 @@ a {
     display: block;
     height:40vh;
     margin:0 auto;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
+}
+
+.movie iframe {
+    width:100%;
+    display:block;
+    margin:0 auto;
 }
 
 #cl_voice-movie {
