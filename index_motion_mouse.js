@@ -39,6 +39,7 @@ function animate() {
 
   frame += 1;
 }
+
 requestAnimationFrame(animate);
 
 var camera = document.getElementById("camera");
