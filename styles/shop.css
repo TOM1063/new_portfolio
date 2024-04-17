@@ -51,3 +51,14 @@
     font-size: 20rem;
 
 }
+
+
+@media screen and (max-width: 768px) {
+    .product-container p {
+        font-size: 10rem;
+    }
+
+    .shop-title {
+        font-size:4rem;
+    }
+}
